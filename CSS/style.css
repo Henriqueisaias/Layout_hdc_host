@@ -1,58 +1,62 @@
 @charset "UTF-8";
 
-*{
-padding: 0px;
-margin: 0px;
-font-family: sans-serif;
+* {
+    padding: 0px;
+    margin: 0px;
+    font-family: sans-serif;
 }
 
-nav{
-padding: 4px;
-background-color: rgb(14, 10, 33);
+nav {
+    padding: 4px;
+    background-color: rgb(14, 10, 33);
 
 }
 
-.img{
+
+.img {
     background-image: url(../imagens/mainbanner.png);
     background-size: cover;
     background-position: center;
     padding: 10rem 0;
 }
 
-.img h1, .img p{
-color: rgb(255, 247, 247);
-font-family: sans-serif;
-text-align: center;
-text-shadow: 3px 3px 4px black;
+.img h1,
+.img p {
+    color: rgb(255, 247, 247);
+    font-family: sans-serif;
+    text-align: center;
+    text-shadow: 3px 3px 4px black;
 }
 
-.img>h1{
+.img>h1 {
     font-size: 70px;
 }
 
-.img>p{
+.img>p {
     font-size: 30px;
 }
 
 
 
-nav{
+nav {
+    height: 70px;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin-right: 0px;
 }
 
-nav ul{
+nav ul {
     padding-right: 30px;
 }
 
- nav ul li{
-    display:inline-block;
+nav ul li {
+    display: inline-block;
     text-decoration: none;
     text-shadow: 1px 1px 3px black;
 }
 
-nav ul li a{
+nav ul li a {
     text-decoration: none;
     padding: 16px;
     color: white;
@@ -60,22 +64,22 @@ nav ul li a{
     text-transform: uppercase;
 }
 
-.btn{
-background-color: rgb(68, 190, 49);
-border-radius: 5px;
+.btn {
+    background-color: rgb(68, 190, 49);
+    border-radius: 5px;
 }
 
-.home img{
-    width: 40%;
-    padding: 10px 10px 10px 30px;
+.home img {
+    width: 30%;
+    padding-left: 30px;
 }
 
-.nav-items{
-    display:flex;
+.nav-items {
+    display: flex;
     align-items: end;
 }
 
-.main{
+.main {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -83,13 +87,166 @@ border-radius: 5px;
     margin-top: 50px;
 }
 
-.main article{
+.main article {
     width: 320px;
     color: black;
     text-align: center;
 }
 
-.main article h2{
+.main article h2 {
     margin-bottom: 20px;
     font-size: 22px;
 }
+
+.fas fa-comments {
+    color: orange;
+}
+
+aside h2,
+aside p {
+    text-align: center;
+    padding: 20px;
+}
+
+aside h2 {
+    padding-bottom: 0px;
+    font-size: 40px;
+}
+
+aside p {
+    font-size: 20px;
+}
+
+.plan-container {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    padding: 50px;
+
+}
+
+.plan {
+    flex: 1;
+    max-width: 275px;
+    margin: 20px;
+
+}
+
+.plan ul {
+    padding: 0px;
+}
+
+.plan li {
+    list-style: none;
+    height: 50px;
+    line-height: 50px;
+    background-color: aliceblue;
+    text-align: center;
+}
+
+.plan .preco {
+    background-color: #12b14a;
+    color: white;
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    line-height: 120px;
+    margin: 0 auto -50px;
+    font-size: 18px;
+    position: relative;
+}
+
+.plan .topo {
+    background-color: rgb(12, 4, 53);
+    padding-top: 50px;
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.plan .base {
+    background-color: #12b14a;
+    color: white;
+    padding: 20px;
+    font-size: 23px;
+
+}
+
+.pesquisa {
+    text-align: center;
+    padding: 20px;
+    height: 300px;
+    background-color: #10053a;
+    color: white;
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+.pesquisa .caixa-de-pesquisa {
+    width: 60vw;
+    display: block;
+    margin: auto;
+    height: 40px;
+    border-radius: 5px;
+    border: none;
+    text-indent: 25px;
+}
+
+.pesquisa .btn-pesquisar {
+    background-color: #12b14a;
+    color: white;
+    padding: 10px;
+    margin-top: 20px;
+    border-radius: 5px;
+    border: none;
+    width: 200px;
+    height: 50px;
+    font-size: 20px;
+}
+
+footer {
+    text-align: center;
+    padding: 50px;
+}
+
+footer .caixa-ent {
+    height: 30px;
+    text-indent: 25px;
+    margin-right: 16px;
+    margin-top: 20px;
+}
+
+footer textarea {
+    display: block;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    width: 450px;
+    padding: 10px;
+}
+
+footer .btn-enviar {
+    width: 190px;
+    padding: 10px;
+    color: white;
+    background-color: #12b14a;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 90px;
+    font-size: 17px;
+}
+
+footer h2 {
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+
+footer p {
+    margin-bottom: 30px;
+}
+
+.destaque {
+    font-weight: bold;
+}
+
+@media 
