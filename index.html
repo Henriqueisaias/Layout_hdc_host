@@ -8,16 +8,18 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-    <nav>
-        <a class="home" href="#"><img src="imagens/hdchostlogo.png" alt="logo da empresa"></a>
-        <div class="nav-items">
-            <ul>
-                <li><a href="#">preços</a></li>
-                <li><a href="#">contato</a></li>
-                <li><a class="btn" href="#">entrar</a></li>
-            </ul>
-        </div>
-    </nav>
+    <header>
+        <nav>
+            <a class="home" href="#"><img src="imagens/hdchostlogo.png" alt="logo da empresa"></a>
+            <div class="nav-items">
+                <ul>
+                    <li><a href="#">preços</a></li>
+                    <li><a href="#">contato</a></li>
+                    <li><a class="btn" href="#">entrar</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
 
     <div class="img">
         <h1>hDC Host</h1>
@@ -26,19 +28,19 @@
 
     <div class="main">
         
-        <article>
+        <article class="seg">
             <i class="fas fa-shield-alt"></i>
             <h2>segurança</h2>
             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloribus necessitatibus ipsum dolorum cumque eius quaerat voluptates maiores, eveniet temporibus rerum vel, aut perspiciatis exercitationem dicta esse quae id officia eaque!</p>
         </article>
 
-        <article>
+        <article class="perf">
             <i class="fas fa-rocket"></i>
             <h2>performance</h2>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit excepturi perferendis modi consequuntur sed voluptates fuga nam voluptatem assumenda atque nisi numquam, pariatur dolor corporis soluta dignissimos quasi nostrum quo!
         </article>
 
-        <article>
+        <article class="sup">
             <i class="fas fa-comments"></i>
             <h2>Suporte 24/7</h2>
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni sequi consequatur laborum laboriosam, cupiditate dolore deleniti ullam. Architecto quaerat veritatis in modi odit vero, quia porro illo praesentium, illum temporibus.
@@ -122,9 +124,11 @@
         <h2>Mande uma mensagem</h2>
         <p>envie sua mensagem, em até 4 horas um especialista entrará em contato</p>
         <form action="#" method="post"> 
-            <input class="caixa-ent" type="text" placeholder="Seu nome" autocomplete="name">
-            <input class="caixa-ent" type="text" placeholder="Seu e-mail" autocomplete="email">
-            <textarea name="" id="" cols="30" rows="10">Descreva o que você precisa no seu projeto....</textarea>
+            <div class="input-box">
+                <input class="caixa-ent" type="text" placeholder="Seu nome" autocomplete="name">
+                <input class="caixa-ent" type="text" placeholder="Seu e-mail" autocomplete="email">
+            </div>
+            <textarea name="" id="" cols="30" rows="10" placeholder="Descreva o que você precisa no seu projeto...."></textarea>
             <input class="btn-enviar" type="submit" value="Enviar">
         </form>
 

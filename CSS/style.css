@@ -8,7 +8,6 @@
 
 nav {
     padding: 4px;
-    background-color: rgb(14, 10, 33);
 
 }
 
@@ -29,26 +28,48 @@ nav {
 }
 
 .img>h1 {
-    font-size: 70px;
+    font-size: 50px;
 }
 
 .img>p {
-    font-size: 30px;
+    font-size: 20px;
 }
 
 
+i{
+   font-size: 40px;
+}
+
+.fa-shield-alt {
+    color: green;
+}
+
+.fa-rocket {
+    color: rgb(237, 5, 5);
+}
+
+.fa-comments {
+    color: rgb(0, 170, 255);
+}
+
+
+header{
+display: flex;
+align-items: center;
+justify-content: center;
+background-color: rgb(14, 10, 33);
+}
+
 
 nav {
+    width: 90%;
     height: 70px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-right: 0px;
 }
 
-nav ul {
-    padding-right: 30px;
-}
+
 
 nav ul li {
     display: inline-block;
@@ -57,21 +78,23 @@ nav ul li {
 }
 
 nav ul li a {
+    padding-left: 10px;
     text-decoration: none;
-    padding: 16px;
     color: white;
-    font-size: 18px;
+    font-size: 13px;
     text-transform: uppercase;
 }
 
 .btn {
     background-color: rgb(68, 190, 49);
     border-radius: 5px;
+    padding: 10px;
+    margin-left: 10px;
 }
 
 .home img {
     width: 30%;
-    padding-left: 30px;
+    
 }
 
 .nav-items {
@@ -81,10 +104,12 @@ nav ul li a {
 
 .main {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
     padding: 50px;
     margin-top: 50px;
+    gap: 30px;
 }
 
 .main article {
@@ -101,6 +126,8 @@ nav ul li a {
 .fas fa-comments {
     color: orange;
 }
+
+
 
 aside h2,
 aside p {
@@ -119,20 +146,22 @@ aside p {
 
 .plan-container {
     display: flex;
+    flex-wrap: wrap;
+    align-items: center;
     justify-content: space-between;
-    width: 90%;
     padding: 50px;
-
 }
 
 .plan {
     flex: 1;
-    max-width: 275px;
-    margin: 20px;
+    min-width: 275px;
+    margin: 10px;
 
 }
 
 .plan ul {
+    margin: 0 auto;
+    width: 300px;
     padding: 0px;
 }
 
@@ -212,8 +241,13 @@ footer {
 footer .caixa-ent {
     height: 30px;
     text-indent: 25px;
-    margin-right: 16px;
-    margin-top: 20px;
+}
+
+.input-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
 }
 
 footer textarea {
@@ -221,7 +255,7 @@ footer textarea {
     margin: auto;
     margin-top: 20px;
     margin-bottom: 30px;
-    width: 450px;
+   max-width: 450px;
     padding: 10px;
 }
 
@@ -248,5 +282,3 @@ footer p {
 .destaque {
     font-weight: bold;
 }
-
-@media 
